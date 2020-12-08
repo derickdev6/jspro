@@ -1,10 +1,6 @@
 <html>
   <head>
     <title>Derick Mediaplayer</title>
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
     <link rel="stylesheet" href="./assets/index.css" />
   </head>
 
@@ -21,5 +17,30 @@
 
       <button>Play/Pause</button>
     </main>
+
+    <script>
+      const video = document.querySelector("video");
+      const btn = document.querySelector("button");
+
+      function Mediaplayer(config) {
+        this.media = config.el;
+      }
+
+      Mediaplayer.prototype.play = function() {
+        this.media.play()
+      }
+
+      const player = new Mediaplayer({ el:video });
+
+      btn.onclick = () => {
+        if(player.media.paused == true){
+          player.media.play();
+        }
+        else if (player.media.paused == false){
+          player.media.pause();
+        }
+      }
+    </script>
+
   </body>
 </html>
