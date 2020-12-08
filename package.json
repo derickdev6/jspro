@@ -1,0 +1,24 @@
+{
+  "name": "derickdev6-mediaplayer",
+  "version": "1.0.0",
+  "description": "A video plugin package, Platzi course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derickdev6/jspro.git"
+  },
+  "keywords": [
+    "video",
+    "plugin",
+    "Platzi"
+  ],
+  "author": "Derick Robinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derickdev6/jspro/issues"
+  },
+  "homepage": "https://github.com/derickdev6/jspro#readme"
+}
